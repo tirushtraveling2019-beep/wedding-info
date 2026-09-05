@@ -26,15 +26,15 @@
       --dark2: #141414;
       --dark3: #1e1e1e;
       --text: #f5f0e6;
-      --text-m: #d9d0c4;          /* ← lebih terang dari sebelumnya #c8bfb0 */
-      --text-l: #b8aea0;          /* ← jauh lebih terang dari #8a7e72 */
-      --text-ll: #9a9080;         /* ← jauh lebih terang dari #5a5045 */
+      --text-m: #d9d0c4;
+      --text-l: #b8aea0;
+      --text-ll: #9a9080;
       --gold: #c9a84c;
       --goldL: #e2c97e;
-      --goldD: #b89530;           /* ← lebih terang dari #9a7b2e */
+      --goldD: #b89530;
       --goldLL: #d4b87a;
-      --g-bg: rgba(0,0,0,0.55);  /* ← lebih gelap 0.4→0.55 supaya teks di glass lebih kontras */
-      --g-bg2: rgba(0,0,0,0.45); /* ← 0.3→0.45 */
+      --g-bg: rgba(0,0,0,0.55);
+      --g-bg2: rgba(0,0,0,0.45);
       --g-bdr: rgba(255,255,255,0.1);
       --g-bdr2: rgba(255,255,255,0.07);
       --skin: #e8c9a0;
@@ -126,7 +126,6 @@
       position: relative; overflow: hidden;
     }
 
-    /* ====== COVER ====== */
     .cover {
       position: fixed; inset: 0; z-index: 9999;
       display: flex; flex-direction: column;
@@ -152,22 +151,22 @@
     .cover-illustration svg { width: 100%; height: auto; }
     .cover-pre {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 22px;                       /* ← 20→22 */
-      color: rgba(255,255,255,0.85);         /* ← 0.75→0.85 */
+      font-size: 22px;
+      color: rgba(255,255,255,0.85);
       margin-bottom: 24px; opacity: 0; animation: cfu 0.8s 0.3s forwards;
       font-style: italic; font-weight: 300; line-height: 1.7;
       max-width: 360px;
     }
     .cover-names {
       font-family: 'Great Vibes', cursive;
-      font-size: 48px;                       /* ← 46→48 */
+      font-size: 48px;
       color: #fff; line-height: 1.2;
       margin-bottom: 8px; opacity: 0; animation: cfu 0.8s 0.5s forwards;
       text-shadow: 0 2px 20px rgba(0,0,0,0.4);
     }
     .cover-date-line {
       font-family: 'Montserrat', sans-serif;
-      font-size: 15px;                       /* ← 13→15 */
+      font-size: 15px;
       letter-spacing: 4px;
       text-transform: uppercase; color: var(--goldLL);
       margin-top: 16px; margin-bottom: 32px;
@@ -178,13 +177,13 @@
     }
     .cover-guest-label {
       font-family: 'Montserrat', sans-serif;
-      font-size: 14px;                       /* ← 12→14 */
+      font-size: 14px;
       letter-spacing: 4px;
-      text-transform: uppercase; color: rgba(255,255,255,0.6);  /* ← 0.45→0.6 */
+      text-transform: uppercase; color: rgba(255,255,255,0.6);
       margin-bottom: 8px;
     }
     .cover-guest-name {
-      font-size: 24px;                       /* ← 22→24 */
+      font-size: 24px;
       color: #fff; font-weight: 400; letter-spacing: 1px;
     }
     .btn-open {
@@ -193,7 +192,7 @@
       border: 1px solid rgba(255,255,255,0.15);
       color: #fff; padding: 16px 56px;
       font-family: 'Montserrat', sans-serif;
-      font-size: 14px;                       /* ← 13→14 */
+      font-size: 14px;
       letter-spacing: 5px;
       text-transform: uppercase; cursor: pointer;
       opacity: 0; animation: cfu 0.8s 1.1s forwards;
@@ -210,7 +209,6 @@
       to { opacity: 1; transform: translateY(0); }
     }
 
-    /* ====== MUSIC BTN ====== */
     .music-btn {
       position: fixed; bottom: 20px; right: 20px; z-index: 1000;
       width: 46px; height: 46px; border-radius: 50%;
@@ -240,7 +238,7 @@
       transform: translateX(-50%) translateY(12px);
       background: var(--gold); color: var(--dark);
       padding: 13px 28px;
-      font-family: 'Montserrat', sans-serif; font-size: 14px;   /* ← 13→14 */
+      font-family: 'Montserrat', sans-serif; font-size: 14px;
       z-index: 9999; opacity: 0; transition: all 0.4s;
       pointer-events: none; white-space: nowrap;
       max-width: 90vw; text-align: center;
@@ -263,7 +261,7 @@
     }
     .sl {
       font-family: 'Montserrat', sans-serif;
-      font-size: 14px;                       /* ← 12→14 */
+      font-size: 14px;
       letter-spacing: 5px;
       text-transform: uppercase; color: var(--goldD);
       text-align: center; margin-bottom: 6px;
@@ -271,14 +269,14 @@
     }
     .st {
       font-family: 'Great Vibes', cursive;
-      font-size: 38px;                       /* ← 36→38 */
+      font-size: 38px;
       color: var(--goldL);
       text-align: center; line-height: 1.3;
       position: relative; z-index: 2;
     }
     .sst {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 20px;                       /* ← 19→20 */
+      font-size: 20px;
       color: var(--text-m);
       text-align: center; font-weight: 300;
       font-style: italic; margin-top: 6px;
@@ -299,7 +297,6 @@
       transform: rotate(45deg); flex-shrink: 0;
     }
 
-    /* ====== HERO ====== */
     .hero {
       min-height: 100vh;
       display: flex; flex-direction: column;
@@ -317,18 +314,16 @@
       padding: 0; max-width: 420px; border-radius: 0;
     }
     .hero .intro {
-      font-size: 19px;                       /* ← 18→19 */
-      color: var(--text-m);
+      font-size: 19px; color: var(--text-m);
       font-weight: 300; max-width: 380px;
-      margin: 0 auto 16px; line-height: 1,5;
+      margin: 0 auto 16px; line-height: 1.3;
       opacity: 0; animation: fu 1s 0.2s forwards;
       position: relative; z-index: 2;
     }
     .hero .intro2 {
-      font-size: 19px;                       /* ← 18→19 */
-      color: var(--text-m);
+      font-size: 19px; color: var(--text-m);
       font-weight: 300; max-width: 380px;
-      margin: 0 auto 24px; line-height: 1,5;
+      margin: 0 auto 24px; line-height: 1.4;
       opacity: 0; animation: fu 1s 0.4s forwards;
       position: relative; z-index: 2;
     }
@@ -338,47 +333,41 @@
     }
     .hero .hn {
       font-family: 'Great Vibes', cursive;
-      font-size: 54px;                       /* ← 50→54 */
-      color: var(--goldL); line-height: 1.1;
+      font-size: 54px; color: var(--goldL); line-height: 1.1;
     }
     .hero .ha {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 24px;                       /* ← 22→24 */
-      color: var(--text-m);
+      font-size: 24px; color: var(--text-m);
       font-style: italic; display: block; margin: 4px 0;
     }
     .hero .db {
       margin-top: 24px; display: inline-flex;
       flex-direction: column; align-items: center;
-      border: 1px solid rgba(255,255,255,0.12);         /* ← 0.1→0.12 */
-      padding: 18px 28px;                                /* ← 14→18 */
+      border: 1px solid rgba(255,255,255,0.12);
+      padding: 18px 28px;
       opacity: 0; animation: fu 1s 0.8s forwards;
       position: relative; z-index: 2; border-radius: 14px;
-      background: rgba(0,0,0,0.45);                     /* ← 0.35→0.45 */
+      background: rgba(0,0,0,0.45);
       backdrop-filter: blur(14px);
     }
     .hero .db .dbl {
       font-family: 'Montserrat', sans-serif;
-      font-size: 14px;                       /* ← 12→14 */
-      letter-spacing: 4px;
+      font-size: 14px; letter-spacing: 4px;
       text-transform: uppercase; color: var(--gold);
     }
     .hero .db .dbd {
-      font-size: 20px;                       /* ← 18→20 */
-      color: var(--text); font-weight: 500; margin-top: 4px;
+      font-size: 20px; color: var(--text); font-weight: 500; margin-top: 4px;
     }
     .hero .db .dbs {
-      font-size: 17px;                       /* ← 15→17 */
-      color: var(--text-l);
+      font-size: 17px; color: var(--text-l);
       font-weight: 300;
-      margin-top: 10px; line-height: 1.8; max-width: 340px;   /* ← 1.7→1.8, 320→340 */
+      margin-top: 10px; line-height: 1.8; max-width: 340px;
     }
     @keyframes fu {
       from { opacity: 0; transform: translateY(16px); }
       to { opacity: 1; transform: translateY(0); }
     }
 
-    /* ====== VERSE ====== */
     .vs .si {
       background: var(--g-bg);
       backdrop-filter: blur(24px) saturate(140%);
@@ -391,26 +380,23 @@
     .vm {
       font-family: 'Great Vibes', cursive;
       font-size: 52px; color: var(--goldD);
-      opacity: 0.25;                         /* ← 0.2→0.25 */
+      opacity: 0.25;
       line-height: 1; margin-bottom: -6px;
       position: relative; z-index: 2;
     }
     .vs blockquote {
-      font-size: 20px;                       /* ← 19→20 */
-      line-height: 2;
+      font-size: 20px; line-height: 2;
       color: var(--text-m); font-weight: 300;
       font-style: italic; max-width: 400px;
       margin: 0 auto 12px; position: relative; z-index: 2;
     }
     .vs cite {
       font-family: 'Montserrat', sans-serif;
-      font-size: 14px;                       /* ← 12→14 */
-      letter-spacing: 3px;
+      font-size: 14px; letter-spacing: 3px;
       color: var(--gold); font-style: normal;
       position: relative; z-index: 2;
     }
 
-    /* ====== COUPLE ====== */
     .cs .si {
       background: transparent; backdrop-filter: none;
       border: none; box-shadow: none;
@@ -437,23 +423,19 @@
     }
     .cc h3 {
       font-family: 'Great Vibes', cursive;
-      font-size: 30px;                       /* ← 28→30 */
-      color: var(--goldL); margin-bottom: 4px;
+      font-size: 30px; color: var(--goldL); margin-bottom: 4px;
     }
     .cc .par {
-      font-size: 17px;                       /* ← 16→17 */
-      color: var(--text-m);
+      font-size: 17px; color: var(--text-m);
       font-weight: 300; line-height: 1.8; margin-bottom: 8px;
     }
     .cc .par b { color: var(--gold); font-weight: 500; }
     .cc .soc a {
-      color: var(--gold);                    /* ← goldD→gold lebih terang */
-      font-size: 18px;                       /* ← 16→18 */
+      color: var(--gold); font-size: 18px;
       margin: 0 6px; transition: color 0.3s;
     }
     .cc .soc a:hover { color: var(--goldL); }
 
-    /* ====== GALLERY / IKON ====== */
     .gs .si {
       background: transparent; backdrop-filter: none;
       border: none; box-shadow: none;
@@ -479,12 +461,10 @@
     }
     .gi-label {
       font-family: 'Montserrat', sans-serif;
-      font-size: 13px;                       /* ← 11→13 */
-      letter-spacing: 3px;
+      font-size: 13px; letter-spacing: 3px;
       text-transform: uppercase; color: var(--goldD);
     }
 
-    /* ====== LOKASI ====== */
     .ls .si {
       background: transparent; backdrop-filter: none;
       border: none; box-shadow: none;
@@ -501,8 +481,7 @@
     }
     .la {
       text-align: center; margin-top: 14px;
-      font-size: 18px;                       /* ← 17→18 */
-      color: var(--text-m);
+      font-size: 18px; color: var(--text-m);
       font-weight: 300; line-height: 1.7;
     }
     .la i { color: var(--goldD); margin-right: 6px; }
@@ -522,7 +501,6 @@
       box-shadow: 0 4px 20px rgba(0,0,0,0.3);
     }
 
-    /* ====== WISHES ====== */
     .ws .si { padding: 32px 24px; }
     .wf {
       margin-top: 20px; display: flex;
@@ -531,33 +509,30 @@
     }
     .fg label {
       display: block; font-family: 'Montserrat', sans-serif;
-      font-size: 14px;                       /* ← 12→14 */
-      letter-spacing: 3px;
+      font-size: 14px; letter-spacing: 3px;
       text-transform: uppercase; color: var(--goldD); margin-bottom: 6px;
     }
     .fg input, .fg select, .fg textarea {
       width: 100%; padding: 12px 14px;
-      background: rgba(255,255,255,0.08);              /* ← 0.06→0.08 */
+      background: rgba(255,255,255,0.08);
       backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
-      border: 1px solid rgba(255,255,255,0.12);        /* ← 0.08→0.12 */
+      border: 1px solid rgba(255,255,255,0.12);
       color: var(--text);
       font-family: 'Cormorant Garamond', serif;
-      font-size: 18px;                       /* ← 17→18 */
-      outline: none;
+      font-size: 18px; outline: none;
       transition: border-color 0.3s, box-shadow 0.3s;
       border-radius: 12px;
     }
     .fg input::placeholder, .fg textarea::placeholder { color: var(--text-ll); }
     .fg input:focus, .fg textarea:focus {
-      border-color: var(--goldD); box-shadow: 0 0 0 3px rgba(201,168,76,0.15);   /* ← 0.1→0.15 */
+      border-color: var(--goldD); box-shadow: 0 0 0 3px rgba(201,168,76,0.15);
     }
     .fg textarea { resize: vertical; min-height: 80px; }
     .btn-s {
       background: linear-gradient(135deg, var(--goldD), var(--gold));
       color: var(--dark); padding: 14px; border: none;
       font-family: 'Montserrat', sans-serif;
-      font-size: 14px;                       /* ← 13→14 */
-      letter-spacing: 4px;
+      font-size: 14px; letter-spacing: 4px;
       text-transform: uppercase; cursor: pointer;
       font-weight: 600; transition: all 0.3s;
       border-radius: 50px; box-shadow: 0 4px 20px rgba(0,0,0,0.3);
@@ -569,7 +544,7 @@
     .wl {
       margin-top: 24px; display: flex;
       flex-direction: column; gap: 10px;
-      max-height: 400px; overflow-y: auto;
+      max-height: 500px; overflow-y: auto;
       padding-right: 4px; position: relative; z-index: 2;
     }
     .wl::-webkit-scrollbar { width: 3px; }
@@ -578,7 +553,7 @@
       border-left: 2px solid var(--goldD);
       padding: 14px 16px; position: relative;
       border-radius: 0 12px 12px 0;
-      background: rgba(0,0,0,0.35);                     /* ← 0.25→0.35 */
+      background: rgba(0,0,0,0.35);
       backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
     }
     .wc::before {
@@ -589,18 +564,22 @@
     }
     .wn {
       font-family: 'Montserrat', sans-serif;
-      font-size: 15px;                       /* ← 13→15 */
-      letter-spacing: 2px;
+      font-size: 15px; letter-spacing: 2px;
       color: var(--gold); font-weight: 500;
       margin-bottom: 6px; text-transform: uppercase;
     }
     .wm {
-      font-size: 18px;                       /* ← 17→18 */
-      color: var(--text-m);
+      font-size: 18px; color: var(--text-m);
       line-height: 1.8; font-weight: 300; font-style: italic;
     }
+    .wish-info {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 12px; letter-spacing: 2px;
+      color: var(--text-l); text-transform: uppercase;
+      margin-top: 10px; text-align: center;
+      position: relative; z-index: 2;
+    }
 
-    /* ====== GIFT ====== */
     .gfs .si { padding: 32px 24px; }
     .gfc {
       display: flex; flex-direction: column;
@@ -612,31 +591,27 @@
       position: relative; overflow: hidden; width: 100%;
     }
     .gf .bi {
-      font-size: 26px;                       /* ← 24→26 */
-      color: var(--goldD);
+      font-size: 26px; color: var(--goldD);
       margin-bottom: 10px; position: relative; z-index: 2;
     }
     .gf .bn {
       font-family: 'Montserrat', sans-serif;
-      font-size: 15px;                       /* ← 13→15 */
-      letter-spacing: 4px;
+      font-size: 15px; letter-spacing: 4px;
       text-transform: uppercase; color: var(--gold);
       margin-bottom: 8px; position: relative; z-index: 2;
     }
     .gf .an {
-      font-size: 21px;                       /* ← 19→21 */
-      color: var(--text);
+      font-size: 21px; color: var(--text);
       letter-spacing: 3px; font-weight: 600;
       margin: 8px 0; position: relative; z-index: 2;
     }
     .gf .ah {
-      font-size: 18px;                       /* ← 16→18 */
-      color: var(--text-l);
+      font-size: 18px; color: var(--text-l);
       font-weight: 300; margin-bottom: 10px;
       position: relative; z-index: 2;
     }
     .gf .qr {
-      width: 130px; height: 130px;           /* ← 120→130 */
+      width: 130px; height: 130px;
       margin: 0 auto 10px;
       border: 1px solid rgba(255,255,255,0.08);
       padding: 5px; background: #fff;
@@ -667,38 +642,31 @@
     }
     .btn-c:hover { background: var(--gold); color: var(--dark); }
 
-    /* ====== FOOTER ====== */
     .ft {
       text-align: center; padding: 40px 20px 36px;
       position: relative; z-index: 3;
     }
     .ft .fc {
-      font-size: 19px;                       /* ← 18→19 */
-      color: var(--text-m);
+      font-size: 19px; color: var(--text-m);
       font-weight: 300; margin-bottom: 28px;
       line-height: 2; font-style: italic;
       max-width: 420px; margin-left: auto; margin-right: auto;
     }
     .ft .fwa {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 19px;                       /* ← 18→19 */
-      color: var(--text-m);
+      font-size: 19px; color: var(--text-m);
       font-weight: 300; margin-top: 24px;
       font-style: italic; line-height: 1.7;
     }
-    .ft .fsig {
-      margin-top: 16px;
-    }
+    .ft .fsig { margin-top: 16px; }
     .ft .fsig-label {
-      font-size: 19px;                       /* ← 18→19 */
-      color: var(--text-m);
+      font-size: 19px; color: var(--text-m);
       font-weight: 300; font-style: italic; margin-bottom: 6px;
     }
-    .ft .fn { font-family: 'Great Vibes', cursive; font-size: 42px; color: var(--goldL); }  /* ← 38→42 */
+    .ft .fn { font-family: 'Great Vibes', cursive; font-size: 42px; color: var(--goldL); }
     .ft .fd {
       font-family: 'Montserrat', sans-serif;
-      font-size: 14px;                       /* ← 12→14 */
-      letter-spacing: 4px;
+      font-size: 14px; letter-spacing: 4px;
       color: var(--text-l); margin-top: 6px; text-transform: uppercase;
     }
     .ft .fo {
@@ -708,7 +676,6 @@
     .ft .fo span { width: 28px; height: 1px; background: var(--goldD); }
     .ft .fo i { color: var(--goldD); font-size: 7px; }
 
-    /* ====== PARTICLES ====== */
     .ptc-w {
       position: fixed; inset: 0; z-index: 2;
       pointer-events: none; overflow: hidden;
@@ -743,8 +710,8 @@
 
     @media (min-width: 580px) {
       .si { max-width: 540px; }
-      .hero .hn { font-size: 64px; }        /* ← 60→64 */
-      .cover-names { font-size: 60px; }      /* ← 58→60 */
+      .hero .hn { font-size: 64px; }
+      .cover-names { font-size: 60px; }
       .gfc { flex-direction: row; }
       .gf { flex: 1; }
       .pw { max-width: 200px; }
@@ -1063,6 +1030,7 @@
           </div>
           <button type="submit" class="btn-s">Kirim</button>
         </form>
+        <div class="wish-info rv" id="wishInfo"></div>
         <div class="wl" id="wishList"></div>
       </div>
     </section>
@@ -1116,23 +1084,37 @@
 
   <script>
     (function() {
+
+      /* ===================================================
+         PASTE URL GOOGLE APPS SCRIPT ANDA DI SINI:
+         (ikuti panduan setup di bawah)
+         =================================================== */
+      var SHEET_API_URL = 'https://script.google.com/macros/s/AKfycbzCYqzgqk9CFgQfIsECKabp7T__Z_a8b13-BtH3dyKi36HSA0IiiYpNBN1U-EZfsaFQ/exec';
+
+      /* ============ CORE VARS ============ */
       var cover = document.getElementById('cover');
       var btnOpen = document.getElementById('btnOpen');
       var mainContent = document.getElementById('mainContent');
       var musicBtn = document.getElementById('musicBtn');
       var bgM = document.getElementById('bgM');
       var toast = document.getElementById('toast');
+      var wishForm = document.getElementById('wishForm');
+      var wishList = document.getElementById('wishList');
+      var wishInfo = document.getElementById('wishInfo');
+      var wishes = [];
+      var pollTimer = null;
 
+      /* ============ GUEST PARAM ============ */
       function getParam(name) {
-        var url = new URL(window.location.href);
-        return url.searchParams.get(name) || '';
+        try { return new URL(window.location.href).searchParams.get(name) || ''; }
+        catch(e) { return ''; }
       }
-
       var guest = getParam('to');
       if (guest) {
         document.getElementById('guestCover').textContent = decodeURIComponent(guest);
       }
 
+      /* ============ OPEN INVITATION ============ */
       btnOpen.addEventListener('click', function() {
         cover.classList.add('out');
         mainContent.classList.add('show');
@@ -1141,44 +1123,46 @@
         musicBtn.classList.remove('off');
         initParticles();
         initReveal();
-      });
-
-      var musicOn = false;
-      musicBtn.addEventListener('click', function() {
-        if (musicOn) {
-          bgM.pause();
-          musicBtn.classList.add('off');
-          musicOn = false;
-        } else {
-          bgM.play().catch(function(){});
-          musicBtn.classList.remove('off');
-          musicOn = true;
+        loadWishes();
+        /* Poll setiap 15 detik agar komentar tamu lain muncul otomatis */
+        if (SHEET_API_URL) {
+          pollTimer = setInterval(loadWishes, 15000);
         }
       });
 
+      /* ============ MUSIC ============ */
+      var musicOn = false;
+      musicBtn.addEventListener('click', function() {
+        if (musicOn) {
+          bgM.pause(); musicBtn.classList.add('off'); musicOn = false;
+        } else {
+          bgM.play().catch(function(){}); musicBtn.classList.remove('off'); musicOn = true;
+        }
+      });
+
+      /* ============ TOAST ============ */
       function showToast(msg) {
         toast.textContent = msg;
         toast.classList.add('show');
         setTimeout(function() { toast.classList.remove('show'); }, 2800);
       }
 
-      var wishForm = document.getElementById('wishForm');
-      var wishList = document.getElementById('wishList');
-      var wishes = [];
+      /* ============ ESCAPE HTML ============ */
+      function escHtml(s) {
+        var d = document.createElement('div');
+        d.textContent = s;
+        return d.innerHTML;
+      }
 
-      wishForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        var name = document.getElementById('wName').value.trim();
-        var msg = document.getElementById('wMsg').value.trim();
-        if (!name || !msg) return;
-        wishes.unshift({ name: name, msg: msg });
-        renderWishes();
-        wishForm.reset();
-        showToast('Terima kasih atas doa & ucapan Anda 🤲');
-      });
-
+      /* ============ RENDER WISHES ============ */
       function renderWishes() {
         wishList.innerHTML = '';
+        if (wishes.length === 0) {
+          wishList.innerHTML = '<p style="text-align:center;color:var(--text-l);font-style:italic;font-size:16px;padding:16px 0">Belum ada ucapan. Jadilah yang pertama &#10024;</p>';
+          wishInfo.textContent = '';
+          return;
+        }
+        wishInfo.textContent = wishes.length + ' ucapan';
         wishes.forEach(function(w) {
           var div = document.createElement('div');
           div.className = 'wc';
@@ -1187,12 +1171,63 @@
         });
       }
 
-      function escHtml(s) {
-        var d = document.createElement('div');
-        d.textContent = s;
-        return d.innerHTML;
+      /* ============ JSONP: LOAD WISHES FROM GOOGLE SHEET ============ */
+      function jsonpLoad(url, callbackName) {
+        var s = document.createElement('script');
+        s.src = url + (url.indexOf('?') > -1 ? '&' : '?') + 'callback=' + callbackName + '&_t=' + Date.now();
+        s.onerror = function() { if(s.parentNode) s.parentNode.removeChild(s); };
+        document.head.appendChild(s);
+        setTimeout(function() { if(s.parentNode) s.parentNode.removeChild(s); }, 8000);
       }
 
+      window.onWishesLoad = function(data) {
+        if (Array.isArray(data)) {
+          wishes = data;
+          renderWishes();
+        }
+      };
+
+      /* ============ LOAD WISHES ============ */
+      function loadWishes() {
+        if (SHEET_API_URL) {
+          /* Dari Google Sheet — bisa dibaca semua tamu */
+          jsonpLoad(SHEET_API_URL, 'onWishesLoad');
+        } else {
+          /* Fallback: localStorage (hanya di perangkat yang sama) */
+          try { wishes = JSON.parse(localStorage.getItem('weddingWishes') || '[]'); }
+          catch(e) { wishes = []; }
+          renderWishes();
+        }
+      }
+
+      /* ============ SUBMIT WISH ============ */
+      wishForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        var name = document.getElementById('wName').value.trim();
+        var msg = document.getElementById('wMsg').value.trim();
+        if (!name || !msg) return;
+
+        var wishData = { name: name, msg: msg, time: Date.now() };
+
+        if (SHEET_API_URL) {
+          /* Kirim ke Google Sheet via JSONP — langsung tersimpan & bisa dibaca semua tamu */
+          jsonpLoad(
+            SHEET_API_URL + '?add=1&name=' + encodeURIComponent(name) + '&msg=' + encodeURIComponent(msg) + '&time=' + wishData.time,
+            'onWishesLoad'
+          );
+          wishForm.reset();
+          showToast('Terima kasih atas doa & ucapan Anda 🤲');
+        } else {
+          /* Fallback: simpan ke localStorage */
+          wishes.unshift(wishData);
+          try { localStorage.setItem('weddingWishes', JSON.stringify(wishes)); } catch(e) {}
+          renderWishes();
+          wishForm.reset();
+          showToast('Terima kasih atas doa & ucapan Anda 🤲');
+        }
+      });
+
+      /* ============ COPY REKENING ============ */
       document.querySelectorAll('[data-copy]').forEach(function(btn) {
         btn.addEventListener('click', function() {
           var text = btn.getAttribute('data-copy');
@@ -1212,6 +1247,7 @@
         });
       });
 
+      /* ============ PARTICLES ============ */
       function initParticles() {
         var container = document.getElementById('ptcW');
         var types = ['ptc-d', 'ptc-dm', 'ptc-s', 'ptc-b'];
@@ -1228,17 +1264,17 @@
         }
       }
 
+      /* ============ SCROLL REVEAL ============ */
       function initReveal() {
         var items = document.querySelectorAll('.rv');
         var observer = new IntersectionObserver(function(entries) {
           entries.forEach(function(entry) {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('vis');
-            }
+            if (entry.isIntersecting) entry.target.classList.add('vis');
           });
         }, { threshold: 0.15 });
         items.forEach(function(el) { observer.observe(el); });
       }
+
     })();
   </script>
 </body>
